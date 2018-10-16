@@ -96,7 +96,10 @@ def range_to_pattern(start, stop):
         if start_digit == stop_digit:
             pattern += start_digit
         elif start_digit != '0' or stop_digit != '9':
-            pattern += '[{0}-{1}]'.format(start_digit, stop_digit)
+            if start_digit > stop_digit:
+                pattern += '[{0}-{1}]'.format(stop_digit, start_digit)
+            else:
+                pattern += '[{0}-{1}]'.format(start_digit, stop_digit)
         else:
             any_digit_count += 1
 
