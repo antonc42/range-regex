@@ -17,7 +17,7 @@ Usage
 -----
 ::
 
-    from range_regex import regex_for_range
+    from range_regex import bounded_regex_for_range
 
     regex_for_range(12, 34)
 
