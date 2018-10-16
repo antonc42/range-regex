@@ -56,7 +56,7 @@ def split_to_patterns(min_, max_):
 
 
 def split_to_ranges(min_, max_):
-    stops = {max_}
+    stops = set([max_])
 
     nines_count = 1
     stop = fill_by_nines(min_, nines_count)
@@ -96,7 +96,7 @@ def range_to_pattern(start, stop):
         if start_digit == stop_digit:
             pattern += start_digit
         elif start_digit != '0' or stop_digit != '9':
-            pattern += '[{}-{}]'.format(start_digit, stop_digit)
+            pattern += '[{0}-{1}]'.format(start_digit, stop_digit)
         else:
             any_digit_count += 1
 
