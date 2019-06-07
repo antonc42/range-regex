@@ -6,7 +6,7 @@ long_description = open(os.path.join(root, 'README.rst')).read()
 
 setup(
     name='range-regex',
-    version='1.0.3',
+    version='1.0.5',
     description='Python numeric range regular expression generator',
     long_description=long_description,
     url='http://github.com/dimka665/range-regex',
