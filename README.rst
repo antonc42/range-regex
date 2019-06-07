@@ -6,13 +6,17 @@ Another like packages generates incorrect or excessive patterns.
 
 Installation
 ------------
+::
 
-``pip install git+https://github.com/antonc42/range-regex.git``
+    pip install git+https://github.com/antonc42/range-regex.git
 
 or
 
-``git clone https://github.com/antonc42/range-regex.git``
-``pip install ./range-regex``
+::
+
+    git clone https://github.com/antonc42/range-regex.git
+    pip install ./range-regex
+
 
 Usage
 -----
